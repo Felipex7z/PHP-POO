@@ -7,7 +7,7 @@
 </head>
 <body>
    <?php 
-   require_once 'class.luta.php';
+   require_once 'class.lutador.php';
    $l = new lutador("danilo", "goias ", 30, 90.75,  11, 2, 1);
    $l->Status();
    
