@@ -19,6 +19,7 @@ class Luta{
 
     public function getDesafiador(){
         return $this->desafiador;
+        
     }
     public function setDesafiador($desafiador){
         $this->desafiador = $desafiador;
@@ -49,6 +50,7 @@ class Luta{
     public function setAprovada($aprovada){
         $this->aprovada = $aprovada;
     }
+    //exer luta
 
 
 
