@@ -1,15 +1,30 @@
 <?php 
+require_once 'class.lutador.php';
 class Luta{
-    private $desafiador;
+    private $desafiado;
     private $desafiante;
     private $rounds;
     private $aprovada;
      //metodos/funcões//
-    public function __construct()
-    {
+   
         
+    
+    public function marcarLuta($l, $l1){
+        if($l.getCategoria() == $l2.getCategoria()
+        && ($l != $l1)){
+    $this->aprovada = true;
+    $this->desafiado= $l;
+    $this->desafiante = $l1;
+
+
+
+    }else{
+        $this->aprovada = false;
+        $this->desafiado = null;
+        $this->desafiante = null;
+
     }
-    public function marcarLuta(){
+
 
     }
     public function Lutar(){
@@ -18,11 +33,11 @@ class Luta{
     //getter e setters//
 
     public function getDesafiador(){
-        return $this->desafiador;
+        return $this->desafiado;
         
     }
-    public function setDesafiador($desafiador){
-        $this->desafiador = $desafiador;
+    public function setDesafiador($desafiado){
+        $this->desafiado = $desafiador;
     }
 
 
