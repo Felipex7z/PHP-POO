@@ -28,6 +28,28 @@ class Luta{
 
     }
     public function Lutar(){
+        if($this->aprovada){
+            $this->desafiado->apresentar();
+            $this->desafiante->apresentar();
+            $vencedor = rand(0,2);
+            switch($vencedor){
+                case 0:
+                    echo"<p>empate</p>";
+                    $this->desafiado->empatarLuta();
+                    $this->desafiante->empataLuta();
+
+                       break;
+                    case 1:
+                        echo"<p>". $this->desafiado->getNome()."venceu</p>";
+
+                       break;
+                    case 2:
+                        break;
+            }
+
+        }else{
+            echo"<p> luta n pode acontecer</p>";
+        }
 
     }
     //getter e setters//
@@ -37,7 +59,7 @@ class Luta{
         
     }
     public function setDesafiador($desafiado){
-        $this->desafiado = $desafiador;
+        $this->desafiado = $desafiado;
     }
 
 
