@@ -44,6 +44,7 @@ class Luta{
 
                        break;
                     case 2:
+                        $this->
                         break;
             }
 
