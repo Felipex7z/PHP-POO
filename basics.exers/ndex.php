@@ -3,11 +3,18 @@ class Carros{
     private $cor;
      private $cambio ;
      private $ano;
+     public $value;
+     
+     
 
 
 
-     function Acelerar(){
-        echo "pisando fundo";
+     function zeroAsem(){
+        echo "5s";
+        
+     }
+     function valor($value){
+        echo"o carro vale $value<br>";
      }
 
 
@@ -47,9 +54,16 @@ $corola->setCor('yellow');
 $corola->setCambio('manual');
 $corola->setAno(2022);
 print_r($corola);
+$corola->valor("50mil");
+
+
+
 echo "<br>";
+
 $civic = new Carros;
 $civic->setCor('blue');
 $civic->setCambio('automatic');
 $civic->setAno(2020);
+
 print_r($civic);
+$civic->valor("60mil");
